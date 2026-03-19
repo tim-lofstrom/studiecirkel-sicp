@@ -12,5 +12,18 @@
        (lambda (x) (+ x 4))
        b))
 
+(define (g x)
+  (let ((a (+ x 1))
+        (b (+ x 2)))
+    (+ a b)))
 
-(* 8 (pi-sum 1 2000))
+
+(define (my-f x y z) (* x y z))
+
+(my-f 1 2)
+
+(define (f x)
+  ((lambda (a b) (+ a b)) (+ x 1) (+ x 2)))
+
+
+(* 8 (pi-sum 1 200000000))
